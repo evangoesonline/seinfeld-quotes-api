@@ -43,7 +43,7 @@ app.get('/api/quotes', async (req, res) => {
         res.status(500).send('Internal Server Error');
     }
 });
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hey this is my API running 🥳')
 })
 
