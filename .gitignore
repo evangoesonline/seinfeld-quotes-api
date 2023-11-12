@@ -1,3 +1,3 @@
 .env
 # Ignore Google Cloud App Engine configuration files
-app*.yaml
+*.yaml
