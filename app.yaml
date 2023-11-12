@@ -1,0 +1,10 @@
+runtime: nodejs20
+
+env_variables:
+  MONGODB_URI: "mongodb+srv://evanwr:cpKQAIyvr8RcuYbH@cluster0.effzkgn.mongodb.net/?retryWrites=true&w=majority"
+
+handlers:
+- url: /api/quotes
+  script: auto
+- url: /.*
+  script: auto
