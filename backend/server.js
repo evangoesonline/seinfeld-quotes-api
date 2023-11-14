@@ -37,7 +37,7 @@ app.get('/api/quotes', async (req, res) => {
 
 // Define a route to serve index.html as the default file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(port, () => {
