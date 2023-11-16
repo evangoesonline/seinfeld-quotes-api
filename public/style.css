@@ -18,10 +18,16 @@ main {
     flex: 1;
 }
 
+header {
+    background-color: #fcd720;
+    width: 100%;
+    text-align: center;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2.25em;
     margin: 0 0 .5rem;
 }
 
@@ -38,11 +44,11 @@ select {
 
 }
 
+
 h2,
 label {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
-    font-size: 1em;
     /*margin: 0 auto .5rem;*/
 
 }
