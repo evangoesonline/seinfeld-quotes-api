@@ -24,7 +24,13 @@ app.get('/api/quotes', async (req, res) => {
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
 
-        const quotes = await collection.find({}).toArray();
+        // Get the selected character from the query parameter
+        const selectedCharacter = req.query.author;
+
+        // Create a filter based on the selected character
+        const filter = selectedCharacter ? { author: selectedCharacter } : {};
+
+        const quotes = await collection.find(filter).toArray();
 
         await client.close();
 
